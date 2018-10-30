@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: Zuul-Gateway
+server:
+  port: 8079
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8091/eureka  
+zuul:
+  routes:
+    dataserver:
+       url: http://localhost:8081      
+      
+  
+
+      
+    

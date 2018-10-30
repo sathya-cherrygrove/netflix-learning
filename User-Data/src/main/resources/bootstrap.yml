@@ -1,0 +1,16 @@
+spring:
+   application:
+      name: User-Data-Service
+   h2:
+     console:
+        enabled: true
+        path: /h2-console
+
+server:
+   port: 8085
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8091/eureka
+
